@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <ctime>
+
 
 using namespace std;
 
@@ -41,10 +43,23 @@ public:
         return ln;
     }
 
+    int getDay() {
+        return day;
+    }
+
+    int getMonth() {
+        return month;
+    }
+
+    int getYear() {
+        return year;
+    }
+
 };
 
 
 
 int main() {
-   cout << "Hello, world" << endl;
+   HeartRates myHeart("Rosana", "Hashim", 28, 7, 2002);
+   cout << myHeart.getYear();
 }
